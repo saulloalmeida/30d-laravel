@@ -16,6 +16,11 @@
     </style>
 </head>
 <body class="font-sans antialiased dark:bg-black dark:text-white/50">
- {{ $slot }}
+    <nav>
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/contact">Contact</a>
+    </nav>
+    {{ $slot }}
 </body>
 </html>
