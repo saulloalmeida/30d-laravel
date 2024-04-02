@@ -4,7 +4,6 @@ use App\Models\Job;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    dd(Job::all());
     return view('home');
 });
 
