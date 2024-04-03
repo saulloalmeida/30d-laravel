@@ -17,6 +17,7 @@ class JobFactory extends Factory
      */
     public function definition(): array
     {
+       // use in tinker $employers = Employer::factory(5)->create();
         return [
             'title'  => fake()->jobTitle(),
             'employer_id' => Employer::factory(),
