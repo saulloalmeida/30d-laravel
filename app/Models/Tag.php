@@ -6,12 +6,12 @@ use App\Models\Job;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 
-class Employer extends Model
+class Tag extends Model
 {
     use HasFactory;
 
-    function jobs()
+    public function jobs()
     {
-        return $this->hasMany(Job::class);
+        return $this->belongsToMany(Job::class, relatedPivotKey: 'job_listing_id');
     }
 }
